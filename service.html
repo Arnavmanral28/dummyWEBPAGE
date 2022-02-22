@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href = '/images/image1.jpg'
+    />
+
+    <link rel="stylesheet" href="dist/my-slider.css"/>
+    <script src="app/js/ism-2.2.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/style.css" />
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title>AIMS | Home</title>
+    <style>
+      .table {
+          border-collapse: collapse;
+          border: 1.5px solid black;
+          color: black;
+      }
+      .table2 {
+          border-collapse: collapse;
+          border: 1.5px solid black;
+          color: black;
+      }
+      th , td {
+          border: 1.5px solid black;
+          color: black;
+          padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <footer class="socialFooter">
+      <div class="socialContainer">
+        <div class="footer__social">
+          <a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" style="margin-top: 5px;">
+              <title>Facebook</title>
+              <path
+                fill="#FFF"
+                d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"
+              />
+            </svg>
+          </a>
+          <a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" style="margin-top: 5px;">
+              <title>YouTube</title>
+              <path
+                fill="#FFF"
+                d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z"
+              />
+            </svg>
+          </a>
+          <a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" style="margin-top: 5px;">
+              <title>Twitter</title>
+              <path
+                fill="#FFF"
+                d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z"
+              />
+            </svg>
+          </a>
+          <a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" style="margin-top: 5px;">
+              <title>Pinterest</title>
+              <path
+                fill="#FFF"
+                d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z"
+              />
+            </svg>
+          </a>
+          <a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" style="margin-top: 5px;">
+              <title>Instagram</title>
+              <path
+                fill="#FFF"
+                d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"
+              />
+            </svg>
+          </a>
+          <a style="color: #ffffff; margin-left: 50px; font-size: 1.1rem; margin-right: 2px;" >
+            📧 email: info.aimsmigration.education@gmail.com
+          </a>  
+          <a style="color: #ffffff; font-size: 1.1rem;" >
+          </a> 
+        </div>      
+    </footer>
+    
+
+
+
+
+    <header class="header">
+      <div class="overlay has-fade"></div>
+
+      <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+            <a href="/" class="header__logo">
+                <!--<img src="images/logo.svg" alt="AIMS" />-->
+                AIMS
+            </a>
+
+            <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+        <div class="header__links hide-for-mobile">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog.html">Blog</a>
+          <a href="#" style="background: linear-gradient(to right, #fb9d50, #f31616); color: black;">Services</a>
+        </div>
+
+        <a href="#" class="button header__cta hide-for-mobile btn lightbox-220104545654853" style="margin-top: 16px">
+            Contact Us
+        </a>
+      </nav>
+
+      <div class="header__menu has-fade">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+        <a href="">Services</i></a>
+      </div>
+    </header>
+
+    <section class="guides">
+      <div class="guide__content container container--pall">
+        <!--<div style="
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.15;
+        margin-bottom: 1rem;
+        text-align: center;">
+          <h2 style="color:#000000; margin-bottom: 30px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+          AIMS
+          </h2>
+        </div>
+       -->
+        <div class="guide__grid">
+          <a href="#studyToMigrate" class="guide__item">
+            <div class="guide__text">
+              <div class="guide__title" style="font-size: 1rem; font-weight: 300; margin-bottom: 1rem; text-align: center; font-family: 'Times New Roman', Times, serif;">
+                Courses
+              </div>
+              <div class="guide__title" style="font-family: 'Times New Roman', Times, serif; font-size: 1.25rem; font-weight: 300; margin-top: 2.2rem; text-align: center;">
+                  <i class="fas fa-arrow-alt-circle-right"></i>
+               </div>
+            </div>
+          </a>
+
+          <a href="#scholarship" class="guide__item">
+            <div class="guide__text">
+              <div class="guide__title" style="font-family: 'Times New Roman', Times, serif; font-size: 1rem; font-weight: 300; text-align: center;">
+                Scholarship 
+              </div>
+              <div class="guide__title" style="font-family: 'Times New Roman', Times, serif; font-size: 1.25rem; font-weight: 300; margin-top: 2.2rem; text-align: center;">
+                  <i class="fas fa-arrow-alt-circle-right"></i>
+               </div>
+            </div>
+          </a>
+
+          <a href="#healthCover" class="guide__item">
+            <div class="guide__text">
+              <div class="guide__title" style="font-family: 'Times New Roman', Times, serif; font-size: 1rem; font-weight: 300; margin-bottom: 1rem; text-align: center;">
+                Health Cover 
+              </div>
+              <div class="guide__title" style="font-family: 'Times New Roman', Times, serif; font-size: 1.25rem; font-weight: 300; margin-top: 2.2rem; text-align: center;">
+                  <i class="fas fa-arrow-alt-circle-right"></i>
+               </div>
+            </div>
+          </a>
+
+          <a href="#careerCounselling" class="guide__item">              
+            <div class="guide__text">
+              <div class="guide__title" style="font-size: 1.rem; font-weight: 300; margin-bottom: 1rem; text-align: center; font-family: 'Times New Roman', Times, serif;">
+                Career Counselling 
+              </div>
+              <div class="guide__title" style="font-family: 'Times New Roman', Times, serif; font-size: 1.25rem; font-weight: 300; margin-top: 2.2rem; text-align: center;">
+                <i class="fas fa-arrow-alt-circle-right"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#otherServices" class="guide__item">              
+            <div class="guide__text">
+              <div class="guide__title" style="font-size: 1.rem; font-weight: 300; margin-bottom: 1rem; text-align: center; font-family: 'Times New Roman', Times, serif;">
+                Other Services 
+              </div>
+              <div class="guide__title" style="font-family: 'Times New Roman', Times, serif; font-size: 1.25rem; font-weight: 300; margin-top: 2.2rem; text-align: center;">
+                <i class="fas fa-arrow-alt-circle-right"></i>
+              </div>
+            </div>
+          </a>
+            
+      </div>
+    </div>
+  </section>
+
+    <section>
+        <div class="container">
+          <img src="/serviceImages/our-services_2 (1).png" alt="about" style="width: 100%; height: 20rem;">
+        </div>
+    </section>
+
+    <section style="background: linear-gradient(to right, #debdbd, #e4cfe6, #bbefd3, #dcddaa, #f0bb7f);" id="studyToMigrate">
+      <div class="service__content container container--pall">        
+        <div style=
+        "font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.15;
+        margin-bottom: 1rem;
+        text-align: center;">
+        <h2 style="color:#000000; font-size: 3rem; margin-bottom: 4rem; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            Some popular courses
+        </h2>
+        </div>
+
+        <div class="service__grid">
+          <a href="nursing.html" class="service__item">
+            <div
+              class="service__image"
+              style="background-image: url('serviceImages/nursing.jpg')"
+            ></div>
+            <div class="service__text">
+              <div class="service__title" style="font-size: 1.25rem; font-weight: 300; margin-bottom: 1rem; text-align: center; font-family: 'Times New Roman', Times, serif;">
+                NURSING
+              </div>
+            </div>
+          </a>
+
+          <a href="engineering.html" class="service__item">
+            <div
+              class="service__image"
+              style="background-image: url('serviceImages/engineering.jpg')"
+            ></div>
+            <div class="service__text">
+              <div class="service__title" style="font-family: 'Times New Roman', Times, serif; font-size: 1.25rem; font-weight: 300; margin-bottom: 1rem; text-align: center;">
+                ENGINEERING
+              </div>
+            </div>
+          </a>
+
+          <a href="informationTech.html" class="service__item">
+            <div
+              class="service__image"
+              style="background-image: url('serviceImages/IT.jpg')"
+            ></div>
+            <div class="service__text">
+              <div class="service__title" style="font-family: 'Times New Roman', Times, serif; font-size: 1.25rem; font-weight: 300; margin-bottom: 1rem; text-align: center;">
+                INFORMATION TECHNOLOGY
+              </div>
+            </div>
+          </a>
+
+          <a href="socialWork.html" class="service__item">
+            <div
+              class="service__image"
+              style="background-image: url('serviceImages/socialWork.jpg')"
+            ></div>
+            <div class="service__text">
+              <div class="service__title" style="font-family: 'Times New Roman', Times, serif; font-size: 1.25rem; font-weight: 300; margin-bottom: 1rem; text-align: center;"> 
+                SOCIAL WORK
+              </div>
+            </div>
+          </a>
+
+            <!-- -->
+      
+          <a href="hospitality.html" class="service__item">
+            <div
+              class="service__image"
+              style="background-image: url('/serviceImages/hospitality.jpg')"
+            ></div>
+            <div class="service__text">
+              <div class="service__title" style="font-family: 'Times New Roman', Times, serif; font-size: 1.25rem; font-weight: 300; margin-bottom: 1rem; text-align: center;">
+                COMMERCIAL COOKERY AND HOSPITALITY
+              </div>
+            </div>
+          </a>
+      
+          <a href="automotive.html" class="service__item">
+            <div
+              class="service__image"
+              style="background-image: url('serviceImages/automotive.jpg')"
+            ></div>
+            <div class="service__text">
+              <div class="service__title" style="font-family: 'Times New Roman', Times, serif; font-size: 1.25rem; font-weight: 300; margin-bottom: 1rem; text-align: center;">
+                AUTOMOTIVE
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+
+      <section class="about" id="scholarship" style="margin-bottom: 7rem;">
+        <div style="font-size: 1.25rem;font-weight: 300;line-height: 1.15;margin-bottom: 1rem;text-align: center;">
+            <h1 style="color:#000000; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                Scholarship
+            </h1>
+        </div>
+        <div class="container">
+          <div class="about__text">
+            <h2 style="font-size: 2.5rem; font-weight: bold; color:#ff4646; font-family: 'Times New Roman', Times, serif;"> 
+              We’ve helped hundereds of international students reach their study goals
+            </h2>
+            <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> 
+              We know that tertiary study in Australia can be expensive, but many institutions recognise this and provide scholarships to honour your commitment to your studies.These scholarships are specifically designed to ease some of the burden for high-achieving and disadvantaged students, so you can concentrate on achieving the best possible results without being concerned about money. 
+            </p>
+            <ul style="list-style-type:disc; color: #fb9d50;">
+              <li>Aid is available in some form for many study areas and institutions</li>
+              <li>We’ll help you easily find and apply for scholarships</li>
+              <li>You could save tens of thousands of dollars off your course fees</li>
+            </ul>
+          </div>
+          <div class="scholarship__image"></div>
+        </div>
+      </section>
+
+      <section style="margin-left: 3rem; margin-bottom: 5rem;">
+        <div style="text-align: center;">
+          <h1 style="font-family: 'Times New Roman', Times, serif; color: cadetblue; margin-bottom: 5rem;" >List of international student scholarship in Australia</h1>
+        </div>
+      <div class="scrollClass">
+        <table class="textClass table"> 
+            <tr>
+                <th>Institute</th>
+                <th>Scholarship Name</th>
+                <th>Amount</th>
+                <th>Eligibility</th>
+                <th>Terms</th>
+            </tr>
+            <tr  style="text-align: center;">
+                <th rowspan="2" width = "6.25rem"><a href="https://www.cqu.edu.au/" target="_blank"> <img  src="https://www.cqu.edu.au/__data/assets/git_bridge/0037/67897/dist/mysource_files/cqu-logo.png"> </a></th>
+                <td rowspan="1" style = "padding: 1rem; font-size: 1.2rem;" >
+                  Postgraduate Development Scholarship
+                </td>
+                <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem; ;" >
+                  20% reduction in fees
+                </td>
+                <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem; ;" >
+                  Achieved 65% average in previous studies
+                </td>
+                <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem;" >
+                  20% off the tuition fees for the duration of the course; if student maintains 5.5 GPA average
+                </td>
+            </tr>
+            <tr  style="text-align: center;">
+                <td rowspan="1" style = "padding: 1rem; font-size: 1.2rem" ; >Vice Chancellor Scholarship (VCS)	</td>
+                <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ; >
+                  20% reduction in fees
+                </td>
+                <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ; >
+                  Achieved 75% average in previous studies
+                </td>
+                <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ; >
+                  20% off the tuition fees for the duration of the course; if student maintains 5.5 GPA average
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <th rowspan="3">
+                  <a href="https://www.latrobe.edu.au/" target="_blank">
+                    <img src="https://www.latrobe.edu.au/_media/la-trobe-api/v5/img/logo.svg" alt="">
+                  </a>
+                </th>
+                <td rowspan="1" style = "padding: 1rem; font-size: 1.2rem" ; >Postgraduate Excellence Scholarships</td>
+                <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>20% of the total tuition fee</td>
+                <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>	Meet course prerequisites and have GPA of 70%</td>
+                <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ; >
+                  Equally distributed throughout the duration of the course
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+              <td rowspan="1" style = "padding: 1rem; font-size: 1.2rem" ; >Regional Campus Scholarships</td>
+               <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Regional Campus Scholarships</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem; align-items: center; justify-content: center;" ;>0</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                Studying UG or PG at one of the regional campuses
+              </td>
+            </tr>
+            <tr style="text-align: center;">
+             <td rowspan="1" style = "padding: 1rem; font-size: 1.2rem" ;>Civil Engineering Scholarship</td>
+             <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>00/year</td>
+             <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>	Must meet English language and academic requirements (70% in Year 12 or equivalent) for the Bachelor of Civil Engineering course</td>
+             <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>00 per year, subject to satisfactory progress</td>
+            </tr>
+    
+            <tr style="text-align: center;">
+             <th>
+               <a href="https://www.cdu.edu.au/" target="_blank">
+                 <img src="/images/charlesLogo.png" alt="">
+                </a>
+              </th>
+             <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Vice-Chancellor’s International High Achievers Scholarship</td>
+             <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>25% and 50% of total tuition fees</td>
+             <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Academic excellence and high achievement; applying for full duration UG and PG degree</td>
+             <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>25 or 50% off the tuition fees for the duration of the course; if student maintains a Credit average</td>
+            </tr>
+    
+            <tr style="text-align: center;">
+              <td>
+                <a href="https://www.qut.edu.au/" target="_blank">
+                  <img src="https://www.qut.edu.au/__data/assets/image/0007/909781/qut-logo-og-1200.jpg" width="300rem" height="300rem" alt="">
+                </a>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>International Merit Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>25% of your total tuition fees</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;> Must meet Academic and English requirements. Plus you need to be accepted to an approved program.</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;> 25% of tuition fees for your first two semesters at QUT.
+                Ongoing scholarship to cover 25% of your tuition fees per semester of study at QUT, provided you meet the academic conditions.</td>
+            </tr>
+    
+            <tr style="text-align: center;">
+              <td>
+                <a href="https://www.vu.edu.au/" target="_blank">
+                  <img src="https://www.universitiesaustralia.edu.au/wp-content/uploads/2019/06/VU-300x300.png" alt="">
+                </a>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>VU COVID-19 International Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Up to ,000 for the first two study periods</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>International students commencing an undergraduate or postgraduate (coursework) course with VU Melbourne in Semester 2, 2020 or Trimester 3, 2020 This includes international students already in Australia, international students currently in other countries, international students at VU-partnered universities and students on a pathway from one VU course to another VU course. Higher education diploma or VET students are not eligible for this scholarship.</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <ul style="list-style-type:disc; color: #000000;">
+                  <li>Students must pay the 50% deposit to accept their offer. The VU COVID-19 International Scholarship will be applied to the tuition fee balance, which is due by the course census date.</li>
+                  <li>Undergraduate students must enrol in 48 credit points each semester unless unit availability does not allow them to do so.</li>
+                  <li>Postgraduate (coursework) students enrolling in a reduced study load will be eligible to receive a reduced amount, based on the number of units taken (pro-rata).</li>
+                  <li>Undergraduate students choosing to reduce their study load are not eligible.</li>
+                  <li>The VU COVID-19 International Scholarship is not refundable, convertible to cash, or transferable to another individual, commencing study period, or course.</li>
+                  <li>Students who have received a scholarship or sponsorship from another organisation are not eligible for this scholarship.</li>
+                </ul>
+            </td>
+            </tr>
+    
+            <tr style="text-align: center;">
+              <td rowspan="6">
+                <a href="https://www.swinburneonline.edu.au/" target="_blank">
+                  <img src="https://www.swinburneonline.edu.au/app/themes/sol/images/swinburne_online_logo_swinburne.png" alt="">
+                </a>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>George Swinburne STEM Achievement Postgraduate Scholarship	</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>30% of the total tuition fees</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>	International student who is eligible for an offer for one of the selected 2-year master by coursework programs.</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>	Scholarship amount will be distributed throughout the duration of your studies</td>
+            </tr>
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>2 Year Master Program Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>25% of the total tuition fees</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>International student who is eligible for an offer for one of the selected 2-year master by coursework programs.</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;> Scholarship amount will be distributed throughout the duration of your studies and will vary depending on your previous academic results.</td>
+            </tr>
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Swinburne International Pathways Academic Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>00</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>	The following packaged courses will qualify: Foundation Year + Unilink Diploma + Bachelor program Foundation + Bachelor Program Unilink Diploma + Bachelor program</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Scholarship amount will be distributed throughout the duration of the studies and will automatically be assessed for a scholarship when applying for an eligible package</td>
+            </tr style="text-align: center;">
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Swinburne International Undergraduate Academic Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>25% of total tuition fees</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Eligible for bachelor program</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Scholarship amount will be distributed throughout the duration of the studies and will automatically be assessed</td>
+            </tr>
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Undergraduate Academic Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>10% of total tuition fees</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Eligible for professional bachelor program</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Scholarship amount will be distributed throughout the duration of the studies and will automatically be assessed</td>
+            </tr>
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Swinburne International-Master of Information Technology (Professional Computing) and Master of Science (Network Systems)</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>00</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>International student who is eligible for an offer for one of the selected 2-year master by coursework programs.</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Scholarship amount will be distributed throughout the duration of your studies.</td>
+            </tr>
+    
+    
+            <tr style="text-align: center;">
+              <td rowspan="2">
+                <a href="https://www.csu.edu.au/" target="_blank">
+                  <img src="https://cdn.csu.edu.au/__data/assets/file/0009/2823219/CSU_Logo_01.svg" alt="">
+                </a>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Bursary Award (Philippine market)</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>00</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Full payment of semester fee</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Reimbursement after completing 2 subjects</td>
+            </tr>
+    
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Bursary Award (Latin and European market)</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>00</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Full payment of semester fee</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Reimbursement after completing 2 subjects</td>
+            </tr>
+    
+            <tr style="text-align: center;">
+              <td rowspan="2">
+                <a href="https://federation.edu.au/" target="_blank">
+                  <img src="/images/federationLogo.png" alt="">
+                </a>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Federation International Excellence Scholarships</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>20% reduction of annual tuition fees</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Academic Performance: UG – overall academic performance with “Distinction” in Year 12; PG – overall academic performance with “Credit”</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Scholarship amount will be distributed throughout the duration of the studies and will automatically be assessed for a scholarship</td>
+            </tr>
+    
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>International Student Accommodation Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Up to the value of 00</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Must apply for a full year (39 weeks) of full semester (17 weeks) and must be enrolled in a FedUni UG and PG programs</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>The scholarship will be credited in two payments across the academic year contract</td>
+            </tr>
+    
+            <tr style="text-align: center;">
+              <td rowspan="2">
+                <a href="https://www.deakin.edu.au/" target="_blank"></a>
+                  <img src="/images/deikinLogo.png" alt="">
+                </a>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Deakin International Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>25% of your student contributions (tuition fees)</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                Applicants must: 
+                <ul style="list-style-type:disc; color: #000000;">
+                  <li>be a prospective international student</li>
+                  <li>be eligible to study in Australia with a student visa</li>
+                  <li>not have accepted any other Deakin scholarship or bursary</li>
+                  <li>have achieved a 65% average (or equivalent) in previous studies.</li>
+                </ul>
+                All criteria must be met.
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Selection of successful applicants for the fixed number of scholarships will be competitive, and may require scores above the stated minimum requirements.</td>
+            </tr>
+    
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Deakin Vice-Chancellor’s International Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>All of your student contributions (tuition fees) or 50% of your student contributions (tuition fees)</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                Applicants must: 
+                <ul style="list-style-type:disc; color: #000000;">
+                  <li>be a prospective international student</li>
+                  <li>be eligible to study in Australia with a student visa</li>
+                  <li>not have accepted any other Deakin scholarship or bursary</li>
+                  <li>have achieved a 85% average (or equivalent) in previous studies.</li>
+                </ul>
+                All criteria must be met.
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Selection of successful applicants for the fixed number of scholarships will be competitive, and may require scores above the stated minimum requirements.</td>
+            </tr>
+    
+            <tr style="text-align: center;">
+              <td rowspan="1">
+                <a href="https://www.curtin.edu.au/" target="_blank">
+                  <img src="https://www.curtin.edu.au/wp-content/themes/mimas/dist/icons/logo-curtin.svg" alt="">
+                </a>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Alumni & Family Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>25% of first year tuition fee, up to a maximum of AUD,000</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <ul style="list-style-type:disc; color: #000000;">
+                  <li>International, full fee-paying, non-sponsored students of any nationality except Australian</li>
+                  <li>Students commencing studies at Curtin’s Western Australia campuses in 2017</li>
+                  <li>Students commencing a full Curtin undergraduate or master by coursework program</li>
+                </ul>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <ul style="list-style-type:disc; color: #000000;">
+                  <li>Must remain enrolled in initial course and major of study unless approved by Curtin International</li>
+                  <li>Must maintain a full time enrolment of 100 credit points each semester or study period</li>
+                  <li>Cannot breach the scholarship conditions outlined in their scholarship offer document</li>
+                  <li>Cannot take a leave of absence or withdraw from their units or course of study</li>
+                  <li>Cannot be terminated from studies</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr style="text-align: center;">
+              <td rowspan="4">
+                <a href="https://www.rmit.edu.au/" target="_blank">
+                  <img src="images/rmit.png" width="300rem" alt="">
+                </a>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Academic Excellence Scholarship for Onshore	</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>The total value of the scholarship is AU$5,000, one-off payment to be paid after the first census date</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <li>Be an international student applying from Australia</li>
+                <li>Not be a current RMIT student</li>
+                <li>Enrol for Semester 1 2022 in any Vocational Education, Bachelor, Graduate Diploma or Master by Coursework programs</li>
+                <li>Achieve an overall 70% average or equivalent in your last completed qualification</li>
+                <li>Provide either a personal statement (approx. 200 words) or a 60-90 seconds video. Please introduce yourself, explain why you think you deserve the scholarship and tell us why you would be the perfect RMIT Ambassador</li>
+                <li>Applicants with a conditional offer will need to meet the conditions of their offer before they can be awarded the scholarship</li>
+                <li>Applicants with ELICOS packaged offer are eligible however they must commence their Vocational Education, Bachelor, Graduate Diploma or Master by Coursework program in Semester 1 2022.</li>
+                <li>Applicants must submit an application for this scholarship</li>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <li>Applicants must be an international student applying from Australia</li>
+                <li>This scholarships is not available to current RMIT students.</li>
+                <li>Applicants with a conditional offer will need to meet the conditions of their offer before they can be awarded the scholarship.</li>
+                <li>Applicants with ELICOS packaged offer are eligible however they must commence their eligible program in Semester 1 2022.</li>
+                <li>If you have been offered an ELICOS packaged offer, this scholarship will apply when you articulate into the eligible program.</li>
+                <li>This scholarship cannot be deferred.</li>
+                <li>The value of your scholarship is based on full-time 48 credit points enrolment load in your first semester, which will be adjusted accordingly if your enrolment load is reduced.</li>
+                <li>RMIT International may profile scholarship recipients.</li>
+                <li>Scholarship selection is based on academic merit and personal statement or video.</li>
+                <li>Successful applicants will be notified; unsuccessful applicants will not be contacted.</li>
+                <li>Applicants should not be in receipt of any other scholarship covering tuition fees (applicants currently in receipt of a scholarship loan may be considered).</li>
+                <li>The scholarships will be offered on a rolling basis until exhausted.</li>
+                <p style="font-weight: bold;">*For full terms and conditions please view the <a href="https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/fees-and-scholarships/scholarships/international-scholarships-terms-and-conditions">International Scholarships Terms and Conditions.</a></p>
+              </td>
+            </tr>
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>RMIT International School Leaver Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>The value of the scholarship is AUD $5000 one-off payment to be paid after the first census date</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p>In order to qualify for this scholarship you must:</p>
+                <li>Be an international student applying from Australia,</li>
+                <li>Be onshore and completing your high school in Australia,</li>
+                <li>submit your application via VTAC and receive an offer from RMIT for an Associate degree or Undergraduate program</li>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <li>The applicant must be onshore.</li>
+                <li>The value of your scholarship is based on full-time 48 credit points enrolment load in your first semester, which will be adjusted accordingly if your enrolment load is reduced.</li>
+                <li> the conditions of their offer before they can be awarded the scholarship.</li>
+                <li>Applicants with ELICOS packaged offer are eligible however they must commence their eligible program in Semester 1 2022.</li>
+                <li>If you have been offered an ELICOS packaged offer, this scholarship will apply when you articulate into the eligible program.</li>
+                <li>This scholarship cannot be deferred.</li>
+                <li>The value of your scholarship is based on full-time 48 credit points enrolment load in your first semester, which will be adjusted accordingly if your enrolment load is reduced.</li>
+                <li>RMIT International may profile scholarship recipients.</li>
+                <p style="font-weight: bold;">*For full terms and conditions please view the <a href="https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/fees-and-scholarships/scholarships/international-scholarships-terms-and-conditions">International Scholarships Terms and Conditions.</a></p>
+              </td>
+            </tr>
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>STEM Merit Scholarship for Onshore</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>The total value of the scholarship is AU$10,000, one-off payment to be paid after the first census date</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p>In order to qualify for this scholarship you must:</p>
+                <li>not be a current RMIT student,</li>
+                <li>achieve an overall 70% average or equivalent in your last completed qualification,</li>
+                <li>enrol in Semester 1 2022 for any Vocational Education, Bachelor, Graduate Diploma or Master by coursework programs^ offered by one of RMIT Schools below: Engineering, Health and Biomedical Sciences, Sciences, Computing Technologies</li></li>
+                <li>applicants with a conditional offer need to meet the conditions of their offer</li>
+                <li>applicants with ELICOS packaged offer are eligible however they must commence their Vocational Education, Bachelor, Graduate Diploma or Master by coursework program in Semester 1 2022</li>
+                <li>applicants must submit an application for this scholarship,</li>
+                <li>provide either a personal statement (approx. 200 words) or a 60-90 seconds video. Please introduce yourself, explain why you think you deserve the scholarship and tell us why you would be the perfect RMIT Ambassador.</li>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <li>Applicants must be an international student applying from Australia</li>
+                <li>This scholarships is not available to current RMIT students.</li>
+                <li>Applicants with a conditional offer will need to meet the conditions of their offer before they can be awarded the scholarship.</li>
+                <li>Applicants with ELICOS packaged offer are eligible however they must commence their eligible program in Semester 1 2022.</li>
+                <li>If you have been offered an ELICOS packaged offer, this scholarship will apply when you articulate into the eligible program.</li>
+                <li>This scholarship cannot be deferred.</li>
+                <li>The value of your scholarship is based on full-time 48 credit points enrolment load in your first semester, which will be adjusted accordingly if your enrolment load is reduced.</li>
+                <li>RMIT International may profile scholarship recipients.</li>
+                <li>Scholarship selection is based on academic merit and personal statement or video.</li>
+                <li>Successful applicants will be notified; unsuccessful applicants will not be contacted.</li>
+                <li>Applicants should not be in receipt of any other scholarship covering tuition fees (applicants currently in receipt of a scholarship loan may be considered).</li>
+                <li>The scholarships will be offered on a rolling basis until exhausted.</li>
+                <p style="font-weight: bold;">*For full terms and conditions please view the <a href="https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/fees-and-scholarships/scholarships/international-scholarships-terms-and-conditions">International Scholarships Terms and Conditions.</a></p>
+              </td>
+            </tr style="text-align: center;">
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Transition to Melbourne Bursary</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>The value of the scholarship is AU$5,000 as a one-off payment transferred into student’s bank account after census date</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p>In order to qualify for this scholarship you must:</p>
+                <li>be an international student* currently living and studying in an institution interstate (within Australia) or in regional Victoria,</li>
+                <li>not be a current RMIT University student,</li>
+                <li>be applying onshore (in Australia),</li>
+                <li>commence in Semester 1 2022,</li>
+                <li>enrol in one of the following: Associate degree, Bachelor degree, Masters by coursework, Graduate certificate, Graduate diploma.</li>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <li>Applicants must be an international student applying from Australia</li>
+                <li>This scholarships is not available to current RMIT students.</li>
+                <li>Applicants with a conditional offer will need to meet the conditions of their offer before they can be awarded the scholarship.</li>
+                <li>Applicants with ELICOS packaged offer are eligible however they must commence their eligible program in Semester 1 2022.</li>
+                <li>If you have been offered an ELICOS packaged offer, this scholarship will apply when you articulate into the eligible program.</li>
+                <li>This scholarship cannot be deferred.</li>
+                <li>The value of your scholarship is based on full-time 48 credit points enrolment load in your first semester, which will be adjusted accordingly if your enrolment load is reduced.</li>
+                <li>RMIT International may profile scholarship recipients.</li>
+                <li>Scholarship selection is based on academic merit and personal statement or video.</li>
+                <li>Successful applicants will be notified; unsuccessful applicants will not be contacted.</li>
+                <li>Applicants should not be in receipt of any other scholarship covering tuition fees (applicants currently in receipt of a scholarship loan may be considered).</li>
+                <li>The scholarships will be offered on a rolling basis until exhausted.</li>
+                <p style="font-weight: bold;">*For full terms and conditions please view the <a href="https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/fees-and-scholarships/scholarships/international-scholarships-terms-and-conditions">International Scholarships Terms and Conditions.</a></p>
+              </td>
+            </tr>
+
+            <tr style="text-align: center;">
+              <td rowspan="7">
+                <a href="https://www.jcu.edu.au/" target="_blank">
+                  <img src="images/jcu.jpg" width="300rem" alt="">
+                </a>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Vice Chancellor's International Student Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;> provides up to a maximum of AU$40,000 per year for the minimum course duration </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p style="font-weight: bold;">*Please visit the <a href="https://www.jcu.edu.au/scholarships/search?queries_everything_query=&queries_location_query_posted=1&queries_location_query%5B1%5D=int&queries_status_query_posted=1&queries_study_level_query_posted=1&queries_study_area_query_posted=1&queries_scholarships_for_query_posted=1&queries_campus_query_posted=1&search_page_1914873_submit_button=Search&current_result_page=1&results_per_page=8&submitted_search_category=&mode=">JCU scholarships website</a> for further details, eligibility criteria and application information and to browse all scholarships available to international students.</p>
+              </td>
+            </tr>
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Warm Welcome Relocation Grant</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;> AU$5,000 is available for students who are new to James Cook University in 2022 </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p style="font-weight: bold;">*Please visit the <a href="https://www.jcu.edu.au/scholarships/search?queries_everything_query=&queries_location_query_posted=1&queries_location_query%5B1%5D=int&queries_status_query_posted=1&queries_study_level_query_posted=1&queries_study_area_query_posted=1&queries_scholarships_for_query_posted=1&queries_campus_query_posted=1&search_page_1914873_submit_button=Search&current_result_page=1&results_per_page=8&submitted_search_category=&mode=">JCU scholarships website</a> for further details, eligibility criteria and application information and to browse all scholarships available to international students.</p>
+              </td>
+            </tr>
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Warm Welcome Relocation Allowance</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>AU$2,000 is available to international undergraduate and postgraduate students returning to Australia and commencing HDR students</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p style="font-weight: bold;">*Please visit the <a href="https://www.jcu.edu.au/scholarships/search?queries_everything_query=&queries_location_query_posted=1&queries_location_query%5B1%5D=int&queries_status_query_posted=1&queries_study_level_query_posted=1&queries_study_area_query_posted=1&queries_scholarships_for_query_posted=1&queries_campus_query_posted=1&search_page_1914873_submit_button=Search&current_result_page=1&results_per_page=8&submitted_search_category=&mode=">JCU scholarships website</a> for further details, eligibility criteria and application information and to browse all scholarships available to international students.</p>
+              </td>
+            </tr style="text-align: center;">
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>JCU International Excellence Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>provides a 25% tuition fee reduction for eligible students from the United States, Canada, Latin America, the United Kingdom and Europe</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;></td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p style="font-weight: bold;">*Please visit the <a href="https://www.jcu.edu.au/scholarships/search?queries_everything_query=&queries_location_query_posted=1&queries_location_query%5B1%5D=int&queries_status_query_posted=1&queries_study_level_query_posted=1&queries_study_area_query_posted=1&queries_scholarships_for_query_posted=1&queries_campus_query_posted=1&search_page_1914873_submit_button=Search&current_result_page=1&results_per_page=8&submitted_search_category=&mode=">JCU scholarships website</a> for further details, eligibility criteria and application information and to browse all scholarships available to international students.</p>
+              </td>
+            </tr>
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>JCU International Merit Stipend</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>provides monthly payments of A$700 to assist with expenses throughout the duration of study at JCU, for eligible students from Asia, Africa, Papua New Guinea and the Middle East</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;></td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p style="font-weight: bold;">*Please visit the <a href="https://www.jcu.edu.au/scholarships/search?queries_everything_query=&queries_location_query_posted=1&queries_location_query%5B1%5D=int&queries_status_query_posted=1&queries_study_level_query_posted=1&queries_study_area_query_posted=1&queries_scholarships_for_query_posted=1&queries_campus_query_posted=1&search_page_1914873_submit_button=Search&current_result_page=1&results_per_page=8&submitted_search_category=&mode=">JCU scholarships website</a> for further details, eligibility criteria and application information and to browse all scholarships available to international students.</p>
+              </td>
+            </tr>
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>International Master of Engineering (Professional) Scholarship</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>provides a 15% tuition fee reduction throughout the entire duration of the Master of Engineering (Professional) degree</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;></td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p style="font-weight: bold;">*Please visit the <a href="https://www.jcu.edu.au/scholarships/search?queries_everything_query=&queries_location_query_posted=1&queries_location_query%5B1%5D=int&queries_status_query_posted=1&queries_study_level_query_posted=1&queries_study_area_query_posted=1&queries_scholarships_for_query_posted=1&queries_campus_query_posted=1&search_page_1914873_submit_button=Search&current_result_page=1&results_per_page=8&submitted_search_category=&mode=">JCU scholarships website</a> for further details, eligibility criteria and application information and to browse all scholarships available to international students.</p>
+              </td>
+            </tr>
+            <tr style="text-align: center;">
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>Research Scholarships</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>CU offers highly competitive scholarships to students commencing research degrees at Master or Doctoral level.</td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;></td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p style="font-weight: bold;">*Please visit the <a href="https://www.jcu.edu.au/scholarships/search?queries_everything_query=&queries_location_query_posted=1&queries_location_query%5B1%5D=int&queries_status_query_posted=1&queries_study_level_query_posted=1&queries_study_area_query_posted=1&queries_scholarships_for_query_posted=1&queries_campus_query_posted=1&search_page_1914873_submit_button=Search&current_result_page=1&results_per_page=8&submitted_search_category=&mode=">JCU scholarships website</a> for further details, eligibility criteria and application information and to browse all scholarships available to international students.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section style="margin-left: 3rem; margin-bottom: 5rem;">
+        <div style="text-align: center;">
+          <h1 style="font-family: 'Times New Roman', Times, serif; color: cadetblue; margin-bottom: 5rem;" >
+            Other University which offers international student scholarship
+          </h1>
+        </div>
+      <div class="scrollClass">
+        <table class="textClass table2"> 
+            <tr>
+                <th>Institute</th>
+                <th>Institute Name</th>
+                <th>link</th>
+            </tr>
+            <tr style="text-align: center;">
+                <th rowspan="1" width = "6.25rem">
+                  <a href="https://bond.edu.au/" target="_blank">
+                    <img src="images/bondUni.jpg" width="25%" height="20%"> 
+                  </a>
+                </th>
+                <td rowspan="1" style = "padding: 1rem; font-size: 1.2rem;" >
+                  Bonds University
+                </td>
+                <td width = "450.25rem" style = "padding: 1rem; font-size: 1.2rem; ;" >
+                  <p style="font-weight: bold;">For full terms and conditions please view the <a href="https://international.unisa.edu.au/scholarships-and-sponsorships/" target="_blank"> Bonds International Scholarships page.</a></p>
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <th rowspan="1">
+                  <a href="https://www.unisa.edu.au/" target="_blank">
+                    <img src="images/unisa.png" alt="" width="15%" height="10%">
+                  </a>
+                </th>
+                <td rowspan="1" style = "padding: 1rem; font-size: 1.2rem" ; >
+                  unisa
+                </td>
+                <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                  <p style="font-weight: bold;">For full terms and conditions please view the <a href="https://international.unisa.edu.au/" target="_blank"> Unisa International Scholarships page.</a></p>
+                </td>
+            </tr>
+    
+            <tr style="text-align: center;">
+             <th>
+               <a href="https://www.scu.edu.au/" target="_blank">
+                 <img src="/images/southernCrossUni.png" alt="" width="15%" height="10%">
+                </a>
+              </th>
+             <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+              Southern Cross University
+             </td>
+             <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+               <p style="font-weight: bold;">For full terms and conditions please view the 
+                <a href="https://www.scu.edu.au/scholarships/international-student-scholarships/" target="_blank"> 
+                  Southern Cross University's International Scholarships page.
+                </a>
+              </p>
+             </td>
+            </tr>
+    
+            <tr style="text-align: center;">
+              <td>
+                <a href="https://www.utas.edu.au/?gclid=CjwKCAiAx8KQBhAGEiwAD3EiP1t_qQb2Cq2pyto855wX_0Vs87vuLaAEglHyJVXznrUipqsDpLd0hBoCUZ8QAvD_BwE&gclsrc=aw.ds" target="_blank">
+                  <img src="images/uniTasmania.png" width="30%" height="200rem" alt="">
+                </a>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                University of Tasmania 
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p style="font-weight: bold;">
+                  For full terms and conditions please view the 
+                  <a href="https://www.utas.edu.au/study/scholarships-fees-and-costs/international-scholarships" target="_blank">
+                     Tasmania University's International Scholarships page.
+                  </a>
+                  </p>
+              </td>
+            </tr>
+    
+            <tr style="text-align: center;">
+              <td>
+                <a href="https://www.sydney.edu.au/" target="_blank">
+                  <img src="/images/uniSydney.png" alt="" width="30%" height="15%">
+                </a>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                University of Sydney
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p style="font-weight: bold;">
+                  For full terms and conditions please view the 
+                   <a href="https://www.sydney.edu.au/scholarships/international.html" target="_blank"> 
+                     University of Sydney's International Scholarships page.
+                   </a>
+                </p>
+              </td>
+            </tr>
+    
+            <tr style="text-align: center;">
+              <td rowspan="1">
+                <a href="https://www.torrens.edu.au/" target="_blank">
+                  <img src="/images/torrensUni.png" alt="">
+                </a>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                 Torrens University Australia
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p style="font-weight: bold;">
+                  For full terms and conditions please view the 
+                    <a href="https://www.torrens.edu.au/studying-with-us/fees-scholarships/scholarships/international-scholarships" target="_blank"> 
+                      Torrens University Australia's International Scholarships page.
+                    </a>
+                </p>
+              </td>
+            </tr>
+    
+    
+            <tr style="text-align: center;">
+              <td rowspan="1">
+                <a href="https://www.monash.edu/" target="_blank">
+                  <img src="/images/monash.png" width="35%" height="25%" alt="">
+                </a>
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                Monash University 
+              </td>
+              <td width = "6.25rem" style = "padding: 1rem; font-size: 1.2rem" ;>
+                <p style="font-weight: bold;">
+                  For full terms and conditions please view the 
+                  <a href="https://www.monash.edu/study/fees-scholarships/scholarships" target="_blank"> 
+                    Monash University International Scholarships page.
+                  </a>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <section id="healthCover">
+        <div class="container">
+            <div style="font-size: 1.25rem;font-weight: 300;line-height: 1.15;margin-bottom: 1rem;text-align: center;">
+                <h1 style="color:#000000; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    Health Cover
+                </h1>
+            </div>
+        </div>
+        <section class="health">
+          <div class="health__content container container--pall">
+      
+            <div class="health__grid">
+              
+              <div class="health__item">
+                <div class="health__icon">
+                <img src="healthImages/australianUnity.png" width="160rem" height="100rem"/>
+                </div>
+              </div>
+      
+              <div class="health__item">
+                <div class="health__icon">
+                  <img src="data:image/png;base64,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" width="160rem" height="100rem" />
+                </div>
+              </div>
+      
+              <div class="health__item">
+                <div class="health__icon">
+                  <img src="data:image/png;base64,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" width="160rem" height="40rem" />
+                </div>
+              </div>
+      
+              <div class="health__item">
+                <div class = "health__icon">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Bupa_logo.svg/1200px-Bupa_logo.svg.png" width="100rem" height="100rem" alt="">
+                </div>
+              </div>
+      
+              <div class="health__item">
+                <div class = "health__icon">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVsAAACRCAMAAABaFeu5AAAAt1BMVEX////vQjYco90AntvvPC/uMyQAndvvQDTzdm7vPjH5wr/uLRz0fnf0hX/yamP3/P783dvuNynxYln1koz/+vr6zMr97ez96ObxW1HwUkb4ubYyq+Bct+S33/PuKhex2/Kh1O92weje8PnO5/bs+P30i4X2nZji8vpxwOdEseKFyOr83933q6f71tTvSj/2o57wVkyVz+35vLnycGgAl9ntEwD3qaX70c7T6/j5x8Wa0O2o2PBquuW+1ga1AAATUUlEQVR4nO2dCVfiPBfHoatYFqvIDrIJgixuM6Ly/T/Xmz03aVKZAX2c9+R/zpzBkrbJr8nNzU1SCgUnJycnJycnJycnJycnJycnJycnJycnJycnp+NV+68z8E+r3pDSvtotF93FXV87ak//pcrJ54/VRVhkKpXVb5a+73meH/XUyntW4ieEzW/M57nIZ1z9xtsepYswZgpUtj1MFsvvKnDPAn5C8r1sRT7/Iba8Pqhsh5HH5S/hF2cBP+Gb2Yr29c+z9T2paAq+cGwPloXtBLL1b8A3ju3BsrD9UNg+gm8c24NlYTtU2EKD69geLAvbvrMJx8vCtub6suNl8xOWEq4/gl84tgfLxrawsI4dHNsDZWVb69HRQ7SYKscd24NlZYv6s54fRb0b7ahje7By2CLNs0FGx/Zg5bM1yLE9WI7t1+m72Nbv129v64u/jmsfxbbePOefGq+d1dOrlg109Gm1esrLHUpy/vR0vm7UP70ZDt+TVFa284/H0d1jP2NwNbbrbXWTDtJ2pWMlXX+dVdNBkoRhkgzCy+29Kc3FWn5uvnVWnWu1oH/PtvF220oGF/jj/VUrTMIU/auuJKP72zbKXEoOd4zo6ucVnCTEJWiXn3IewcXsrB0OknBTRle6N7Md93wkz4+8D+1she15K0mDOC7GcRAm1fOCQa+3RZyGnxSX0qR6rSa575Q3gzYrxlN5g0qRomJcrkAhzGxfL6tSLUOZX2etOExLxfQWXbqSpiWei3DDMtEopynPHSrFppO9yGoTggIEYVyx0F21QlpUzGOzvUhNbMGoLOrZ2ZYTMcGDLxC29LpbXz2EIucg4ZmoHvW324cUZz0hFfepLYtRCgNZUDPbVloSGqwyZW3+StISuVzpsnCt5iT+9URumARK/uLBrXaR9SbUShCng62B7HUxLMUwlSAF2faUSM3ewjZupUVVQaJU3fosCUtFk9INe/K/f4Ws9OkMVeCHRC1oIgpqZPs7BJc0dRdVfvu4vc0QClHNvU0yTz6cKZdYJaYihNWM8ZhlLiX/lmzvIFpUc5Xhg2RbzGQLPXXQpDpxtsqKm7Vo3i5EkuC5sM0+iYQX1MS2AapJvDFZyt/i6RvyEpeat6F+ED/QC3CFbRY+UXqp3apiuJQsLmf7qKJFsrA1KA5fecJLvaIo4rWjLWxdu2o6IVnb2VZAuxmsCwa95hVYabVA0DjOEtvJaUW5k+kpZS85IXGE/QJU3MnBbFFd5nZ+lXu34oCmq0gTYzQffFbXwHY9kMlCkwFEBteKJq8IiTj/CdwiDlLRF5JbvoEbrfJvxNl2Ec3uGBndz+YdzErPeMqWAisulZRqmf4miTq6zdYLGjZsbMH1bfPqDbWjQv13KShljUMcKOmEUbgHhiRNb3+vZpfSRMRFaYWaSpNDl9Nuwthii+DPC8rUQ9fKFj3MMFQLMOD+67VcrpEmg/blZXsAzi1Rg5XfaouiemTZduSZcWxxihpKnxCn6aZ61tJ5p2n7+ewBYAx5j1yV+Q2v6KHXjVz7Ih2TFihYHBafy5fFEHKibKc+77zgVC8YQShsg+Bsdd65LcLKF4iKW6ZJkas3o1YY+ZIyC0X6xLXGFKNnpThL6dbMFmJLYPOEqrfhlYpXxEe8UOAG6S2pDCuZtZB1yG8yb9J5kHU53vBj56AQpeI5rs/19XOo+wnYs12QE+B05NzMNizT+lKHnWSc8orbwA0oCOFQ4Vma14A6w8Ci4fIHt+frdactm3t6a2Z7m+pJ8tkif45X7i14wskZ98mliWGPs/AgjpRa8pozcXbICwbqd1wSw87zWNycsJ3KrkvaW88bG9nydoIEKiS3pLgQYZxUlQ78DdgJmglYb1H5aUlBpWSmSmd7L88LHmxoC/UHUclS6XpfiHPjQPaBsldNZ1oyaSXwNYXJDZircAFqVvgkU67VMS+2tnQgNvU+YysbP4KxkQ2gJF2/dlFrrU3Z3FMKHXrYsXgOV6l2F53tZaYBGNmKyggyVaiLthIAR0rW5vRKy4N0frBELS0xJ10mLJbgc1ZjNTXsFdBqq8yiG20CfERKOwtFTu51h74uO9CQgpStNqjKEsj6bWYLOrLQEAHIZ1sQljAA1mSlswUmQRkoCKMQ05WcdVCvUjjwVtneRLzawpCC54EpM8AWFuoetgtb11KA1TTDNgR2eS3ao5EtKI5xrPsJ25KJrXxclG0z0O0SkxzsUVMBzFMxgUE+le34zo/YYuYFtAngBAvbAuh8pcH9a7b3+Wxlf1IyjnU/YVs8hK20lrwiM4EKvlX/hsOODFtkZtnaL2XxxwKcYGN7CTx5dTjIy4kF2KZ5bJu5bJuJ7KIuTPc6BVuALLhtNIUa8sHS02UnqPgT9tj4RK6/VRd/2NiWwR20OEbzelt5vnxoY0mfiPkJf8NW+jxhNrB4Kragh8KDSinQ+ZK8PYBapTC0sX0H9dayHszKVjrVSPezdhCmeBRIJBOx7v3P2T6/WfJ8WrYVOEiKgeRRWk1BpCxV4pM2ttC7jXYHsIWxx1AcvW4N0uwA/ji2VVlRQm0G45RsPwucFFklqoPRT6qEjA5aN25mqLKtgsjMgB1rnBkDy0eyPZOW0By1/T62cR2PPgFbxURZ2I4hWxiqsbKFUa8BC3zHOUGuI+ptQQ6J7cPdn8v2Bppby14SlS2MilC2zdRaaY9kK71fe5jmv2GreJ8WtnBaJ1K279nYbiBbUq4HNXNxEKQg0M/Dn3/DFsw4wCjq17GNLSr9DdsuHDkoCxkPYEv7shmMzAbhYPNcudreyjDAMWzBTFlqdKZPy9Y2OUXq7Z/2ZXOIVp1Et7GF84J4rUE9gbCf3+ra7Y5iCyeMEuOyiOPZwiDmW8MinBCyVQZwZrYwLq7s0rGzDTWXGkRTQMr1idgChz3e2Ne5HMP2NwiWGyc6M1c7bOwAp3r9iXIlC9s6YEvyJqPg8GmejC2YiMyJ1hzDVk5J5Qaf1Mh4G35hZrs3mNua916zs73Xqyl4mmBTNWDLBm9/yRZOoNutwjFsQRxMHW7pmsGp/E/Z1mAQjJvbvu97OyvbN8AWL8IDM6xxW3blp2PbkIPPOLBZhWPYgt45f3v2OaxWr+ALM1uAVphbVJejsZUtiGwQlmD6GRbrdGxhdwZnQE7HFsw7pHnLYRuZSUcm4zrGKQyCMXM79+kAzcIWBINI1kD0EwbeTsgW3tI293AUWzBCMQz/6jIKDg0ujHlem9Yx7gBbvnEPdW9kgCbZQmcOmgTSq65BPd58hU1QujObVTiKLTAKcSYodPEgLR1cQVR6EDnpSLcUsFWCt+wY/rhT2MZy9NyEU5GkmjbhWgqZsdcTsoWTyxaLeBxbuLpEdcMalbAkOzi45q8YFDuE7vrSbCpgvWVzDkO+bgEOV9IWXeewgpED2mvXQZxTluseVIXj2cIVSeYg+XFsodWJwy2vkPX1bYJrzsAwK01SJptWq6QuTZZs5xm2eLmN/6GxxcuP01armMB1MCXm4sG4WFom7ae+BTc8AVvYGM3dzZFsoaWL09LZ9um6sy23Q4oSzJdro2J97ZviJ8AIIznSE5+08FDmMgnzQrbwWabt2XnnSlmAfeTYIfMAjVbhSLZw3MvWvoVgf4FcyARWNxll8W9xba3hsFj0YWKrS/SoTWUxEl7mpa4uPgnbV1Amk1U4lm3hMm+ZJTDC+ctvbfsdPL838nxpePPZBrII5bxsHRe/LZhuEg+yVuFotvXMvgOgklzKVK/mltYWq+GIxzpbQ+QtAHGTpnGeDPQ+FydgC7uzQJtePgXbQt26/D0O2/f56eQ+AGVI0dPRRnwvlGCLLK1+sbQN3cxrQ64CMI/4dgK2im+ZXTx+PFvkBITGlpoGWpDhSt+tkZbe+FI/he1Uq7iRCDQKtmmzrbaDOHxW5wBeA20DRxy26pf83W2sBEeyhd1ZHOoLQeoPaUCVwlUZAT8agsB6Jwn4UXUUtr5MdLpxmlQyFui6BdLFQVJuIDPMrqiu/VDg+nIH3zNLnj4U6hVwsVJYzHQmjQp0z2iKc74ljG3VOZTtgJdc2yHzKr4gedLYXlW4YF0UBysgy9dlfrCsj6DXzwneqsXmcYIwibfGcWCnOiBLMZBDkZTxc77n11RXcY0X3Mn1owVYI7qtgOTrs0GId2uG4aBl3K7ZnLVJCpRk0Kb7POtCJEVpwPULREmbv8RRWk3XouQVrS3OJKlKOTfQeoTqb1fVNnnW7ValY9o1y9Jdb8vVVnX2ak1B1d93kYPQXSx3OYnq66fttvO2ts8I1tfnK5TkOmcX7D+ihtgFfQrNx4a3Uzg5OTk5OTk5OTk5OTk5OTk5Of272iHx1aD4s4t/nUw1L4pe3unn6UsURXlB29NogkSfJp6d45uBlkgT+0lfqfmNosNy0Zfpx5Ykta7n+UP6GS9j9A9n+6HkY4r++jio0qMn+EK3APV8uWc48v1oePC9T6r+iw8U3R1yDqqT4gyvq7/kmqX5e7YvSj4m6M+XaU5yIbwMirEFm9h8mY/vVl+dIxx9fgblBqZse7Y0f8k2UvKB10BGB9Xbn83W/0O2ka/Oh2tpHFtE507ooFwQtosa0oT+aoOh6I4tY/uH51C29PMCLD/CXyGJNP5jjQgvEfWVTk8kMymPrX4ivQH9/DPZauWcD/eLRY97LuPdDnEZj9AR9nokyBavUeZbGGofC+R5de8mPI0fUeG6PcLO0Jgm6+FkI1yTa9Tz/egt9qJPtLPt4xO9vXAi+vsuvnp3/4idL4Wtt8D3u6FHPwqTZU+W6LtkYEuXGSLj2yUoeij3ZMOSF7G6ANniDeasvU+6Plvb8a73d/R6PnkL244nw9UJub4vwwL5yZIX/mIrG9spXz0S0W/HXdFX+DhrKluPuT2k3t7R3wFVd8B/uTJsa9iEEu+KvZFu6aP/SalYzhW2S3F+P6IF8shOc8qW+WnCpZiwvQ8yGbb2dAWp+JkdC9s5eyL4xPcC30TBLo9P0Njio3fipRjsjvrbzr9UGbZ42bG/uOkveXnpm2b8ble4mYDtWGSYFn3Z72ML3GNpRkR35FJI3oQm80f9m65Mhq/uSZfWwpYYmTt6fY/tq/IXw8nHyMwW33DJ2PqLj8mj8gC/Q4Ttbkw1Z9s+iMc6Yb0AfUdlH3VJvEVRbvPxmOSXtVDyTnHcrKddvHEM+gk14ifQTueO2+c5LSkh1pvXan3xVgWcg/2cZwkbHcz2URh2j7z0lVyI5mhhYjti/R4xBiQdblgReKPel6vvi6aLDCx7iQStnyPqQgxlnplAe0f/D8kx/NIUFjNY6Gyn0k+Yiz0khTvSYMibh9UsRR7IEm3KNfr2wSE/0R+T1ztKXyXDFvoJPF1Xe2X0V0sZOyxoVtiL7HHFjaa03irnqP0U/WUn+VLLsWjsBv/2XZggnGBByqu7SJGnC7ElrYh+j0+hfah8ZV4uW77NtadXki+Wxpa4oiwruNWiVojZqmEGyhZ5P7QfifYs3+S8XZdYYAtb2lrxMRxPeSfJ9BCZWm8Z2yV/dtO9j3/GYOTLLZafsmX56CkLf79eGltsbvmr0UgzvMFsNd+FsO3uJpP+TY+bM/xff7r76JGu0Dou65LUuxtiLZG5JWw1G4jZEu+U6I6y3eMTa+P+nUeNltxE9cPZqn8expbZMLoefEq7jCgi/hv+NXkLW08k8yKezMAW+Ak76if0wIl4afRCZuFns5WOyeRP2ZLGinoI3pAjjwzLbGx9kWwvkuWznUi25ES/19ez8I+wJTaB3X8q7G0e2wnt+XHRR8OP/hiksdRbnGwHkh3Mtvcx7PO5oX+w3pK+jGULd/io3J+wZRYal+9dS2Ngu/DUix3MduSrL2j6Z+wtGKwQrwp8VfiM7Qe1CSNffa2thS22IF0t2UFsb4BfwC8UyTqMT4gUtvwKP4gt7pb9ucjK8jO29HUpNYJAvHt1zNiy8hG21GknyYY8mdVPyLIlG9f50XlN6XR9yZYegZX8B7GdiDEvGY/N7WzRiHI6/yBdDHZssQGM8KQhGhu/TGij9SdoLLukXhX2CsY7mmzIkvUPZ0t4+Utcc6fv0SN9pjQ68MjY4iPYEafOMG4otf6PYkviAn73cbj3WbzJwpYOmIjrRR4FCUT4Xq+3QP5+j4UhyC/tTWnQoLtfoFHG2APJ6LjsMLY1duJ+ga9aKwyJG9wf70YRY0vusrxZdmlIDt0DX/onsZ16NMLg8XhtHlvidDIO/UiGUxHPGo+uokFanw9jkcXcgWSoWRzMFg0TI3lP1DDu6MNEfhkuw57FP7Cbtivwe6OM/5dsI5QddZqkR0aavs9mx1EF0aYoazIo7S0eBZnpiIxUI69LXqpWWOKtel4Xt+N+l36zmItkPkmGL6WzffFI4JUJzDs8dllIiZiGwgf9czGvoQsueK1A4JHF6LF7DAvoUfL1CahJfmsAt4YDedqx3ftov19OGPEpSqCtD+ABwPFUDYdOd/3hzUSimooza/Ab+ge9K76KFlNl0U5DBtGYF7vQPH1td/NOHGp2wvQOhzdHN6SWT5gzPJbZn2dL4nSwcuc4nZycnJycnJycnJycnJycnJycnJycnJycnP6v9T8QbddWQpob6QAAAABJRU5ErkJggg==" width="150rem" height="100rem" alt="">
+                </div>
+              </div>
+      
+              <div class="health__item">
+                <div class = "health__icon">
+                  <img src="data:image/png;base64,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" width="100rem" height="80rem" alt="">
+                </div>
+              </div>
+      
+              <div class="health__item">
+                <div class = "health__icon">
+                  <img src="https://oshcexpress.com/images/insurers/ahm-logo-oshc-express.jpg" width="180rem" height="180rem" alt="">
+                </div>
+              </div>
+              
+              <div class="health__item">
+                <div class = "health__icon">
+                  <img src="healthImages/cbhc.png" width="180rem" height="100rem" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <section class="healthInsurerss" style="background-color: #fb9d50;">
+          <div class="healthInsurers__content container container--pall">
+            <div style="text-align: center;">
+              <h2 style="color:#ffffff; margin-bottom: 6rem; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2.5rem;">
+              INSURERS
+              </h2>
+            </div>
+      
+            <div class="healthInsurers__grid">
+              <a class="healthInsurers__item">
+                <div
+                  class="healthInsurers__image"
+                  style="background-image: url('healthImages/australianUnity.png')"
+                ></div>
+                <div class="healthInsurers__text">
+                  <div class="healthInsurers__title">
+
+                    <h3 style="color: black; font-weight: bold;">Australian Unity</h3>
+
+                    <p>Australian Unity has been supporting the well-being of Australians since 1840. They offer insurance plans for both working and non-working visas. Some of the services and treatments that are covered include:</p>
+
+                    <ul style="list-style-type:disc; color: #000000; font-size: 1.1rem;">
+                      <li>Doctor and specialist fees,</li>
+                      <li>Emergency ambulance,</li>
+                      <li>Hospital treatment and accommodation,</li>
+                      <li>Day surgery and other procedures</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+      
+              <a class="healthInsurers__item">
+                <div
+                  class="healthInsurers__image"
+                  style="background-image: url('healthImages/iman.png'); height: 18rem;"
+                ></div>
+                <div class="healthInsurers__text">
+                  <div class="healthInsurers__title">
+
+                    <h3 style="color: black; font-weight: bold;">Iman</h3>
+
+                    <p>Iman provides health cover for graduate 485 visa, TSS 482 visa, Temporary (skilled) 457 visa and other working types visas. Some of the major offerings include:</p>
+
+                    <ul style="list-style-type:disc; color: #000000; font-size: 1.1rem;">
+                      <li>Offers short-term health insurance to temporary working visitors</li>
+                      <li>Gives access to the subsidised Pharmaceutical Benefits Scheme (PBS)</li>
+                      <li>Coverage for outpatient- prescribed pharmaceuticals</li>
+                      <li>Takes care of all medical expenses related to in–hospital (In–Patient) care</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </a>
+      
+              <a class="healthInsurers__item">
+                <div
+                  class="healthInsurers__image"
+                  style="background-image: url('https://insurance.aeccglobal.com.au/app/insurers/allianzoshcjpeg');"
+                ></div>
+                <div class="healthInsurers__text">
+                  <div class="healthInsurers__title">
+
+                    <h3 style="color: black; font-weight: bold;">Allianz</h3>
+
+                    <p>Allianz Global Assistance provides access to a network of insurance providers to help you pay your medical bills. They also have representatives on campuses around Australia to help in person. Some of the services and treatments that are covered include:</p>
+
+                    <ul style="list-style-type:disc; color: #000000; font-size: 1.1rem;">
+                      <li>Doctor’s appointments,</li>
+                      <li>Specialists(out of hospital),</li>
+                      <li>Prescription medicine,</li>
+                      <li>Hospital cost,</li>
+                      <li>Emergency ambulance,</li>
+                      <li>Medical tests</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </a>
+      
+              <a class="healthInsurers__item">
+                <div
+                  class="healthInsurers__image"
+                  style="background-image: url('healthImages/bupa.png');"
+                ></div>
+                <div class="healthInsurers__text">
+                  <div class="healthInsurers__title">
+
+                    <h3 style="color: black; font-weight: bold;">Bupa</h3>
+
+                    <p>Bupa is a healthcare company committed to helping customers avail the most affordable insurance plans. They offer a broad range of services, including aged care and retirement, dental, optical, health insurance, and community wellbeing initiatives, to improve the health of all Australians. For overseas visitors, their major offerings are:</p>
+
+                    <ul style="list-style-type:disc; color: #000000; font-size: 1.1rem;">
+                      <li>Coverage for both inpatient and outpatient services,</li>
+                      <li>Receive support when you need it with retail centres in key locations,</li>
+                      <li>Access a range of health discounts, tools and more,</li>
+                      <li>Exclusive Bupa 24 hour advice line for phone-based support</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </a>   
+              
+              <a class="healthInsurers__item">
+                <div
+                  class="healthInsurers__image"
+                  style="background-image: url('healthImages/medibank.png')"
+                ></div>
+                <div class="healthInsurers__text">
+                  <div class="healthInsurers__title">
+
+                    <h3 style="color: black; font-weight: bold;">medibank</h3>
+
+                    <p>Medibank is a leading private health insurer, providing health insurance through their Medibank and ahm brands as well as a range of health services across Australia. Whether an English language course or a university degree, Medibank's Overseas Student Health Covers (OSHC) meet student visa health insurance requirements. Some of the services they offer include:</p>
+
+                    <ul style="list-style-type:disc; color: #000000; font-size: 1.1rem;">
+                      <li>Accident and emergency department facility fees,</li>
+                      <li>Inpatient medical services,</li>
+                      <li>General Practitioner (GP) consultations,</li>
+                      <li>Other out-of-hospital medical services (blood tests and X-rays)</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </a>
+
+              <a class="healthInsurers__item">
+                <div
+                  class="healthInsurers__image"
+                  style="background-image: url('healthImages/nib.jpg')"
+                ></div>
+                <div class="healthInsurers__text">
+                  <div class="healthInsurers__title">
+                    
+                    <h3 style="color: black; font-weight: bold;">NIB</h3>
+
+                    <p>NIB is one of Australia’s largest health insurers , covering more than one million people in Australia and New Zealand. It provides access to a community of doctors and health specialists to meet international students' medical needs and meet Australian government’s international student visa requirements. Some of its major offerings include:</p>
+
+                    <ul style="list-style-type:disc; color: #000000; font-size: 1.1rem;">
+                      <li>Provides access to trusted health professionals,</li>
+                      <li>Provides access to a 24/7 medical support across Australia,</li>
+                      <li>Agreements with Australia’s renowned private hospital to help you save money,</li>
+                      <li>Process access to a member discount program valid for the entire duration of your policy</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </a>
+
+              <a class="healthInsurers__item">
+                <div
+                  class="healthInsurers__image"
+                  style="background-image: url('https://oshcexpress.com/images/insurers/ahm-logo-oshc-express.jpg'); height: 19rem;"
+                ></div>
+                <div class="healthInsurers__text">
+                  <div class="healthInsurers__title">
+
+                    <h3 style="color: black; font-weight: bold;">AHM</h3>
+
+                    <p>AHM is a trusted health insurance provider, serving more than 700,000 Australians over a period of 40 years. Backed by Australia’s largest health insurer, Medibank, it takes pride in providing affordable and flexible health insurance, a seamless online experience and top-notch digital first service. Some of their major offerings include:</p>
+
+                    <ul style="list-style-type:disc; color: #000000; font-size: 1.1rem;">
+                      <li>Health Fund is a not-for-profit,</li>
+                      <li> Fast & Simple Claims,</li>
+                      <li>Affordable costs from accidents to selected surgeries</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </a>
+
+              <a class="healthInsurers__item">
+                <div
+                  class="healthInsurers__image"
+                  style="background-image: url('healthImages/cbhc.png'); height: 15rem;"
+                ></div>
+                <div class="healthInsurers__text">
+                  <div class="healthInsurers__title">
+
+                    <h3 style="color: black; font-weight: bold;">CBHS</h3>
+
+                    <p>For more than 70 years, CBHS has offered high quality policies, reserved only for current and former CBA Group employees, contractors and their families:</p>
+
+                    <ul style="list-style-type:disc; color: #000000; font-size: 1.1rem;">
+                      <li>Easy claims system,</li>
+                      <li>No extra charge for claims on ambulance services,</li>
+                      <li>Access to over 7,500 dental and optical providers who provide exceptional treatment while reducing or removing the gap</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </section> 
+    </section>
+
+    <section>
+      <section class="about" id="careerCounselling">
+        <div style="font-size: 1.25rem;font-weight: 300;line-height: 1.15;margin-bottom: 1rem;text-align: center;">
+            <h1 style="color:#000000; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                Career Counselling
+            </h1>
+        </div>
+        <div class="container">
+          <div class="about__text">
+            <h2 style="font-size: 2.5rem; font-weight: bold; color:#ff4646; font-family: 'Times New Roman', Times, serif;"> 
+              We’ve helped many international students reach their study goals
+            </h2>
+            <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Choosing a course of study in Australia could be difficult, with so many quality options available and numerous wonderful locations to live in while you do it. If you’re not sure where to start, or if you think you know where you’re going but want expert advice first, then speak with us before you apply. We would love to hear your story and help you develop a comprehensive learning plan to get you where you want to go. And with our extensive institutional relationships, we can help you confirm if you’re looking at the right courses (or suggest alternatives if we know there’s something better)</p>
+          </div>
+          <div class="counselling__image"></div>
+        </div>
+      </section>
+
+      <section class="feature">
+        <div class="feature__content container container--pall">
+  
+          <div class="feature__grid">
+            <div class="feature__item">
+              <div class="feature__icon">
+              <img src="/images/counselling.png" width= "85" height= "85" class="imageHover"/>
+              </div>
+              <div class="feature__description" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1rem;">
+                Get one-on-one counselling with our education counsellor
+              </div>
+            </div>
+  
+            <div class="feature__item">
+              <div class="feature__icon">
+                <img src="/images/counsellor.png" width= "85" height= "85" class="imageHover"/>
+              </div>
+              <div class="feature__description" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1rem;">
+                our counsellors have been an international student at some point of time, we’ve real empathy and experience to share with you
+              </div>
+            </div>
+  
+            <div class="feature__item">
+              <div class="feature__icon">
+                <img src="/images/scissor.png" width= "85" height= "85" class="imageHover" />
+              </div>
+              <div class="feature__description" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1rem;">
+                We know that not everyone has the same problem thus we give tailor made advices to people based on thier problem .
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section>
+      <section class="about" id="otherServices">
+        <section class="about" id="scholarship" style="margin-bottom: 7rem; margin-top: 5rem; background-color: #ffffff;">
+          <div class="container">
+            <div class="about__text">
+              <h2 style="font-size: 4.2rem; font-weight: bold; color: #000000; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> 
+                  Other services we offer are: 
+              </h2>
+              <a style="color: #000000; font-size: 2.2rem;">
+                  <ul style="color: #000000;">
+                      <li>Canada Immigiration</li>
+                      <li>USA Immigiration</li>
+                      <li>New Zealand</li>
+                  </ul>
+              </a>
+              
+            </div>
+          </div>
+      </section>
+      </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <a class="footer__logo" href="#">
+          AIMS
+          <!--<img src="/images/logo-dark.svg" />-->
+        </a>
+
+        <div class="footer__social">
+          <a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <title>Facebook</title>
+              <path
+                fill="#FFF"
+                d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"
+              />
+            </svg>
+          </a>
+          <a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+              <title>YouTube</title>
+              <path
+                fill="#FFF"
+                d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z"
+              />
+            </svg>
+          </a>
+          <a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
+              <title>Twitter</title>
+              <path
+                fill="#FFF"
+                d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z"
+              />
+            </svg>
+          </a>
+          <a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <title>Pinterest</title>
+              <path
+                fill="#FFF"
+                d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z"
+              />
+            </svg>
+          </a>
+          <a href="#" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+              <title>Instagram</title>
+              <path
+                fill="#FFF"
+                d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer__links col1">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+        </div>
+
+        <div class="footer__links col2">
+          <a href="contact.html">Contact Us</a>
+          <a href="blog.html">Blog</a>
+        </div>
+
+        <div class="footer__cta">
+          <a href="#" class="button lightbox-220104545654853">Contact Us</a>
+        </div>
+
+        <div class="footer__copyright">
+          &copy; AIMS. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+    <a id="button">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+  
+ 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="/app/js/script.js"></script>
+
+    <!-- FORM -->
+    <script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var JFL_220104545654853 = new JotformFeedback({
+        formId: '220104545654853',
+        base: 'https://form.jotform.com/',
+        windowTitle: 'AIMS: CONTACT FORM',
+        background: '#FFA500',
+        fontColor: '#FFFFFF',
+        type: 'false',
+        height: 700,
+        width: 800,
+        openOnLoad: false
+      });
+    </script>
+  </body>
+</html>
